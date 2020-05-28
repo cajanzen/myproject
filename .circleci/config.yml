@@ -16,7 +16,7 @@ jobs:
           name: Test
   deploy-job:
     docker:
-      - kroniak/ssh-client
+      - image: kroniak/ssh-client
     steps:
       - add_ssh_keys:
           fingerprints:
